@@ -41,13 +41,16 @@ At the end of the game, the players can choose either to restart or stop it.
     ```bash
     cd OOP-TicTacToe
     ```
-2. Switch to `development` branch
+3. Switch to `development` branch
     ```bash
     $ git checkout development
     ```
-3. Run the following command in your `Terminal`:
+4.  Go to `bin` directory
     ```bash
-    $ ruby ./bin/main.rb
+    $ cd bin
     ```
-4. Follow the instructions provided by the Game.
-
+5. Run the following command in your `Terminal`:
+    ```bash
+    $ ruby main.rb
+    ```
+6. Follow the instructions provided by the Game.
