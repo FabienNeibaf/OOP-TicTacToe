@@ -1,3 +1,5 @@
+require_relative "./ui.rb"
+
 class Player
   attr_reader :name
   def initialize(name)
@@ -57,6 +59,7 @@ class Game
     print "\n--> Player 2: "
     add_player(2, gets.chomp)
     puts '---------------------'
+    puts "\n Choose cell to fill using colum_index as a1 or 1a | b2 or 2b, ..."
     loop do
       print "\n#{@players[@current_role].name} move --> "
       input = gets.chomp
