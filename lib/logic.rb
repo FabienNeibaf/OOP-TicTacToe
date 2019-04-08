@@ -110,7 +110,7 @@ class Game
       puts "\n\t\t\t\t*************** #{@players[@current_role].name} wins! ***************" if win
       puts "\n    \t\t\t~~ Draw game! It was a very tight battle. ~~" if draw
       if win || draw
-        print "\n Do you want to play again? (y if yes): "
+        print "\n Do you want to play again? (y for yes or n for no): "
         if gets.chomp.downcase == 'y'
           restart
         else
