@@ -25,6 +25,7 @@ The Player 1 will be the one using X symbol
 The Player 2 will be the one using O symbol
 
 After that, the game starts by prompting alternatively the desired move of each player beginning with the player 1.
+Valid moves are XY or YX with X in (A, B, C) case insensitive and Y in (1, 2, 3).
 If one of them entered a wrong move so a message is prompted to alert the player.
 Also when a compartment was filled, the next player is not allowed to use it anymore.
 So an error message is prompted too if it is the case.
@@ -38,19 +39,19 @@ At the end of the game, the players can choose either to restart or stop it.
 
 1. Clone this repository to your local [Ruby](https://www.ruby-lang.org/en/documentation/installation/) environment.
 2. Open `OOP-TicTacToe` folder
-    ```bash
-    cd OOP-TicTacToe
-    ```
+   ```bash
+   cd OOP-TicTacToe
+   ```
 3. Switch to `development` branch
-    ```bash
-    $ git checkout development
-    ```
-4.  Go to `bin` directory
-    ```bash
-    $ cd bin
-    ```
+   ```bash
+   $ git checkout development
+   ```
+4. Go to `bin` directory
+   ```bash
+   $ cd bin
+   ```
 5. Run the following command in your `Terminal`:
-    ```bash
-    $ ruby main.rb
-    ```
+   ```bash
+   $ ruby main.rb
+   ```
 6. Follow the instructions provided by the Game.
