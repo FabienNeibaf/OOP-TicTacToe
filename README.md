@@ -37,8 +37,17 @@ At the end of the game, the players can choose either to restart or stop it.
 ## Instructions
 
 1. Clone this repository to your local [Ruby](https://www.ruby-lang.org/en/documentation/installation/) environment.
-2. Run the following command in your `Terminal`:
+2. Open `OOP-TicTacToe` folder
+    ```bash
+    cd OOP-TicTacToe
+    ```
+2. Switch to `development` branch
+    ```bash
+    $ git checkout development
+    ```
+3. Run the following command in your `Terminal`:
     ```bash
     $ ruby ./bin/main.rb
     ```
-3. Follow the instructions provided by the Game.
+4. Follow the instructions provided by the Game.
+
