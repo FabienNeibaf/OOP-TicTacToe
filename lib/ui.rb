@@ -20,4 +20,14 @@ class Board
     \t\t\t\t\t   -------------
     HEREDOC
   end
+  def credit
+    puts <<-HEREDOC
+    \t\t\t\t ********************************
+    \t\t\t\t *       TIC-TAC-TOE GAME       *
+    \t\t\t\t * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~ *
+    \t\t\t\t *        FABIEN/DARSHAN        *
+    \t\t\t\t ********************************
+    HEREDOC
+    puts "\n"
+  end
 end
