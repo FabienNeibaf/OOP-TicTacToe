@@ -25,7 +25,7 @@ The Player 1 will be the one using X symbol
 The Player 2 will be the one using O symbol
 
 After that, the game starts by prompting alternatively the desired move of each player beginning with the player 1.
-Valid moves are XY or YX while X in (A, B, C) and Y in (1, 2, 3) case insensitive
+Valid moves are XY or YX with X in (A, B, C) case insensitive and Y in (1, 2, 3).
 If one of them entered a wrong move so a message is prompted to alert the player.
 Also when a compartment was filled, the next player is not allowed to use it anymore.
 So an error message is prompted too if it is the case.
