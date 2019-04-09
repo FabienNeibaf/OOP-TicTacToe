@@ -5,7 +5,7 @@ class Board
   end
 
   def fill(sym, index)
-    return false if [:X, :O].include?(@items[index])
+    return false if %i[X O].include?(@items[index])
 
     @items[index] = sym
   end
@@ -59,7 +59,7 @@ class UI
 
   def iterate
     loop do
-    print "\n#{@game.next_player.name} move --> "
+      print "\n#{@game.next_player.name} move --> "
       input = gets.chomp
       handle_move(input)
     end
@@ -88,7 +88,7 @@ class UI
 
   def end_game?
     print "\n Do you want to play again? (y if yes, n if not): "
-    if gets.chomp.downcase == 'y'
+    if gets.chomp.casecmp?('y')
       @game.restart
     else
       puts "\n\t\t\t\t---->   See you next time!   <----\n"

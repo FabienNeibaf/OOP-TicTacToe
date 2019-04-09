@@ -1,4 +1,4 @@
-require_relative "./ui.rb"
+require_relative './ui.rb'
 
 # LOGIC
 # Store the player informations
@@ -61,6 +61,7 @@ class Game
     return :wrong unless pos
 
     return :filled unless @ui.fill(pos)
+
     next_player.next_move(pos)
     @moves += 1
     status
@@ -72,6 +73,7 @@ class Game
       return :winner if win
     end
     return :draw if @moves == 9
+
     :progress
   end
 

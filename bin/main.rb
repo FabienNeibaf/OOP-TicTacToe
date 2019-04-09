@@ -1,4 +1,4 @@
-require_relative '../lib/logic.rb'
+require './lib/logic.rb'
 
 # Create new game instance
 game = Game.new
