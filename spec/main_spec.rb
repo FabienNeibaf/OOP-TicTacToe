@@ -1,8 +1,7 @@
 require './lib/logic.rb'
 
 describe Game do
-
-  let(:game) {Game.new}
+  let(:game) { Game.new }
 
   before do
     # game
