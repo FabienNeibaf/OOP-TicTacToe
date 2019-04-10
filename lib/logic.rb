@@ -1,4 +1,4 @@
-require_relative "./ui.rb"
+require_relative './ui.rb'
 
 # LOGIC
 # Store the player informations
@@ -39,10 +39,11 @@ class Game
     [0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6],
     [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]
   ].freeze
-  attr_reader :moves, :player
+  attr_reader :moves, :players, :player
   def initialize
     @players = {}
     @moves = 0
+    @ui = UI.new(self)
   end
 
   def add_player(role, name)
@@ -61,6 +62,7 @@ class Game
     return :wrong unless pos
 
     return :filled unless @ui.fill(pos)
+
     next_player.next_move(pos)
     @moves += 1
     status
@@ -72,11 +74,11 @@ class Game
       return :winner if win
     end
     return :draw if @moves == 9
+
     :progress
   end
 
   def start
-    @ui = UI.new(self)
     @ui.start
   end
 
